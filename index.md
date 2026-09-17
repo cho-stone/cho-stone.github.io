@@ -17,7 +17,7 @@ I am currently exploring research topics related to decision making for autonomo
 ### 2026
 
 **September**
-- [Surveying open source projects for autonomous driving and mobile robot decision making](research_log/2026-09-github-survey.md)
+- [Survey of Frameworks and Platforms for Autonomous Driving and Mobile Robot Research](research_log/2026-09-github-survey.md)
 
 ## Projects
 
