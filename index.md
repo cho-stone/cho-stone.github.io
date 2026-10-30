@@ -27,10 +27,10 @@ Coming soon
 
 A multi-agent reinforcement learning environment developed in Unreal Engine using PPO, RLlib, and PettingZoo.
 
-[View Project]()
+[View Project](https://github.com/cho-stone/ue5-multi-agent-rl.git)
 
 ### Adaptive Multi-Agent Classification System
 
 A NOTC-inspired multi-agent classification system with dynamically specialized agents.
 
-[View Project]()
+[View Project](https://github.com/cho-stone/adaptive-multi-agent-classification.git)
