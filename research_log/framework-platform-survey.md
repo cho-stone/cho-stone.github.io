@@ -1,71 +1,134 @@
-# GitHub Survey: Frameworks and Platforms for Decision Making in Autonomous Driving and Mobile Robotics
-
-Date: September 2026
+# Survey of Research Tools, Frameworks, and Platforms for Autonomous Systems
 
 ## Objective
 
-The goal of this survey is to identify suitable frameworks and platforms for future research and to refine potential research directions.
+The goal of this survey is to identify suitable tools, frameworks, and platforms for future research and to refine potential research directions.
 
 - Mobile Robotics
 - Autonomous Driving
 - Decision Making
+- Reinforcement Learning
 - Simulation
 
+---
+
 ## Autonomous Driving
+
+### CARLA
+
+GitHub: https://github.com/carla-simulator/carla
+
+**Type:**
+
+**Purpose:**
+
+**Main Features:**
+
+**Simulation Environment:**
+
+**Supported Agents:**
+
+**Sensor Support:**
+
+**Decision-Making Support:**
+
+**Reinforcement Learning Support:**
+
+**Multi-Agent Support:**
+
+**Integration with Other Tools:**
+
+**Strengths:**
+
+**Limitations:**
+
+**Potential Use for My Research:**
+
+### SUMO
+
+GitHub: https://github.com/eclipse-sumo/sumo
+
+**Type:**
+
+**Purpose:**
+
+**Main Features:**
+
+**Traffic Simulation:**
+
+**Supported Agents:**
+
+**Vehicle Behavior:**
+
+**Multi-Agent Support:**
+
+**Traffic Control Support:**
+
+**Integration with Other Simulators:**
+
+**Strengths:**
+
+**Limitations:**
+
+**Potential Use for My Research:**
 
 ### MetaDrive
 
 GitHub: https://github.com/metadriverse/metadrive
 
-Type:
+**Type:**
 
-Purpose:
+**Purpose:**
 
-Main Features:
+**Main Features:**
 
-Simulation Environment:
+**Simulation Environment:**
 
-Supported Agents:
+**Supported Agents:**
 
-Decision-Making Support:
+**Decision-Making Support:**
 
-Reinforcement Learning Support:
+**Reinforcement Learning Support:**
 
-Multi-Agent Support:
+**Multi-Agent Support:**
 
-Strengths:
+**Strengths:**
 
-Limitations:
+**Limitations:**
 
-Potential Use for My Research:
+**Comparison with CARLA:**
 
+**Potential Use for My Research:**
 
 ### SMARTS
 
 GitHub: https://github.com/huawei-noah/SMARTS
 
-Type:
+**Type:**
 
-Purpose:
+**Purpose:**
 
-Main Features:
+**Main Features:**
 
-Simulation Environment:
+**Simulation Environment:**
 
-Supported Agents:
+**Supported Agents:**
 
-Decision-Making Support:
+**Decision-Making Support:**
 
-Reinforcement Learning Support:
+**Reinforcement Learning Support:**
 
-Multi-Agent Support:
+**Multi-Agent Support:**
 
-Strengths:
+**Strengths:**
 
-Limitations:
+**Limitations:**
 
-Potential Use for My Research:
+**Comparison with CARLA / MetaDrive:**
 
+**Potential Use for My Research:**
+
+---
 
 ## Mobile Robotics
 
@@ -73,59 +136,134 @@ Potential Use for My Research:
 
 GitHub: https://github.com/ros-navigation/navigation2
 
-Type:
+**Type:**
 
-Purpose:
+**Purpose:**
 
-Main Components:
+**Main Components:**
 
-Navigation Architecture:
+**Navigation Architecture:**
 
-Decision-Making Related Components:
+**Global Planning:**
 
-Simulation Integration:
+**Local Planning / Control:**
 
-ROS Integration:
+**Decision-Making Related Components:**
 
-Strengths:
+**Simulation Integration:**
 
-Limitations:
+**ROS 2 Integration:**
 
-Potential Use for My Research:
+**Strengths:**
 
+**Limitations:**
+
+**Potential Use for My Research:**
 
 ### Nav2SocialRL
 
 GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
-Type:
+**Type:**
 
-Based On:
+**Based On:**
 
-Purpose:
+**Purpose:**
 
-Simulation Environment:
+**Simulation Environment:**
 
-Observation:
+**Dynamic Agents:**
 
-Action:
+**Observation:**
 
-Learning Method:
+**Action:**
 
-Decision-Making Level:
+**Learning Method:**
 
-Nav2 Integration:
+**Decision-Making Level:**
 
-Strengths:
+**Nav2 Integration:**
 
-Limitations:
+**Strengths:**
 
-Potential Use for My Research:
+**Limitations:**
+
+**Potential Use for My Research:**
+
+---
+
+## Perception and Human Understanding
+
+### YOLO
+
+GitHub: https://github.com/ultralytics/ultralytics
+
+**Type:**
+
+**Purpose:**
+
+**Main Features:**
+
+**Input:**
+
+**Output:**
+
+**Object Detection Support:**
+
+**Tracking Support:**
+
+**Potential Role in Autonomous Driving:**
+
+**Potential Role in Mobile Robotics:**
+
+**Potential Role in Decision Making:**
+
+**Strengths:**
+
+**Limitations:**
+
+**Potential Use for My Research:**
+
+### OpenPose
+
+GitHub: https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+**Type:**
+
+**Purpose:**
+
+**Main Features:**
+
+**Input:**
+
+**Output:**
+
+**Human Pose Information:**
+
+**Multi-Person Support:**
+
+**Potential Role in Autonomous Driving:**
+
+**Potential Role in Mobile Robotics:**
+
+**Potential Role in Human-Aware Decision Making:**
+
+**Strengths:**
+
+**Limitations:**
+
+**Potential Use for My Research:**
+
+---
 
 ## My Thoughts
 
-coming soon
+Coming soon.
+
+---
 
 ## Next Steps
 
-coming soon
+Coming soon.
+
+---
