@@ -34,3 +34,9 @@ A multi-agent reinforcement learning environment developed in Unreal Engine usin
 A NOTC-inspired multi-agent classification system with dynamically specialized agents.
 
 [View Project](https://github.com/cho-stone/adaptive-multi-agent-classification.git)
+
+### Multi-Task Reinforcement Learning in NetHack Using MOTIF
+
+A multi-task reinforcement learning project in NetHack using MOTIF with intrinsic rewards and task-specific learning to improve exploration across multiple objectives.
+
+[View Project](projects/nethack-multitask-rl.md)
