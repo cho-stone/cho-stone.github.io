@@ -10,7 +10,6 @@ The goal of this survey is to identify suitable tools, frameworks, and platforms
 - Reinforcement Learning
 - Simulation
 
----
 
 ## Autonomous Driving
 
@@ -18,117 +17,107 @@ The goal of this survey is to identify suitable tools, frameworks, and platforms
 
 GitHub: https://github.com/carla-simulator/carla
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Simulation Environment:**
+Simulation Environment:
 
-**Supported Agents:**
+Supported Agents:
 
-**Sensor Support:**
+Sensor Support:
 
-**Decision-Making Support:**
+Decision-Making Support:
 
-**Reinforcement Learning Support:**
+Reinforcement Learning Support:
 
-**Multi-Agent Support:**
+Multi-Agent Support:
 
-**Integration with Other Tools:**
+Integration with Other Tools:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
+Limitations:
 
 ### SUMO
 
 GitHub: https://github.com/eclipse-sumo/sumo
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Traffic Simulation:**
+Traffic Simulation:
 
-**Supported Agents:**
+Supported Agents:
 
-**Vehicle Behavior:**
+Vehicle Behavior:
 
-**Multi-Agent Support:**
+Multi-Agent Support:
 
-**Traffic Control Support:**
+Traffic Control Support:
 
-**Integration with Other Simulators:**
+Integration with Other Simulators:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
+Limitations:
 
 ### MetaDrive
 
 GitHub: https://github.com/metadriverse/metadrive
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Simulation Environment:**
+Simulation Environment:
 
-**Supported Agents:**
+Supported Agents:
 
-**Decision-Making Support:**
+Decision-Making Support:
 
-**Reinforcement Learning Support:**
+Reinforcement Learning Support:
 
-**Multi-Agent Support:**
+Multi-Agent Support:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
+Limitations:
 
-**Comparison with CARLA:**
-
-**Potential Use for My Research:**
+Comparison with CARLA:
 
 ### SMARTS
 
 GitHub: https://github.com/huawei-noah/SMARTS
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Simulation Environment:**
+Simulation Environment:
 
-**Supported Agents:**
+Supported Agents:
 
-**Decision-Making Support:**
+Decision-Making Support:
 
-**Reinforcement Learning Support:**
+Reinforcement Learning Support:
 
-**Multi-Agent Support:**
+Multi-Agent Support:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
+Limitations:
 
-**Comparison with CARLA / MetaDrive:**
-
-**Potential Use for My Research:**
-
----
+Comparison with CARLA / MetaDrive:
 
 ## Mobile Robotics
 
@@ -136,61 +125,55 @@ GitHub: https://github.com/huawei-noah/SMARTS
 
 GitHub: https://github.com/ros-navigation/navigation2
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Components:**
+Main Components:
 
-**Navigation Architecture:**
+Navigation Architecture:
 
-**Global Planning:**
+Global Planning:
 
-**Local Planning / Control:**
+Local Planning / Control:
 
-**Decision-Making Related Components:**
+Decision-Making Related Components:
 
-**Simulation Integration:**
+Simulation Integration:
 
-**ROS 2 Integration:**
+ROS 2 Integration:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
+Limitations:
 
 ### Nav2SocialRL
 
 GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
-**Type:**
+Type:
 
-**Based On:**
+Based On:
 
-**Purpose:**
+Purpose:
 
-**Simulation Environment:**
+Simulation Environment:
 
-**Dynamic Agents:**
+Dynamic Agents:
 
-**Observation:**
+Observation:
 
-**Action:**
+Action:
 
-**Learning Method:**
+Learning Method:
 
-**Decision-Making Level:**
+Decision-Making Level:
 
-**Nav2 Integration:**
+Nav2 Integration:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
-
----
+Limitations:
 
 ## Perception and Human Understanding
 
@@ -198,72 +181,62 @@ GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
 GitHub: https://github.com/ultralytics/ultralytics
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Input:**
+Input:
 
-**Output:**
+Output:
 
-**Object Detection Support:**
+Object Detection Support:
 
-**Tracking Support:**
+Tracking Support:
 
-**Potential Role in Autonomous Driving:**
+Potential Role in Autonomous Driving:
 
-**Potential Role in Mobile Robotics:**
+Potential Role in Mobile Robotics:
 
-**Potential Role in Decision Making:**
+Potential Role in Decision Making:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
+Limitations:
 
 ### OpenPose
 
 GitHub: https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
-**Type:**
+Type:
 
-**Purpose:**
+Purpose:
 
-**Main Features:**
+Main Features:
 
-**Input:**
+Input:
 
-**Output:**
+Output:
 
-**Human Pose Information:**
+Human Pose Information:
 
-**Multi-Person Support:**
+Multi-Person Support:
 
-**Potential Role in Autonomous Driving:**
+Potential Role in Autonomous Driving:
 
-**Potential Role in Mobile Robotics:**
+Potential Role in Mobile Robotics:
 
-**Potential Role in Human-Aware Decision Making:**
+Potential Role in Human-Aware Decision Making:
 
-**Strengths:**
+Strengths:
 
-**Limitations:**
-
-**Potential Use for My Research:**
-
----
+Limitations:
 
 ## My Thoughts
 
 Coming soon.
 
----
-
 ## Next Steps
 
 Coming soon.
-
----
