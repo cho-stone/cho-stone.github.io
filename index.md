@@ -10,14 +10,14 @@ Graduate student at Kyushu Institute of Technology, interested in mobile robotic
 - Reinforcement Learning
 - Simulation
 
-## Research Log
+## Research
 
-I am currently exploring research topics related to decision making for autonomous mobile robots.
+My research focuses on autonomous systems, with interests in mobile robotics, autonomous driving, and decision making.
 
-### 2026
-
-**September**
+### Surveys
 - [Survey of Frameworks and Platforms for Autonomous Driving and Mobile Robot Research](research_log/2026-09-github-survey.md)
+
+### Current Research
 
 ## Projects
 
