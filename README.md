@@ -1,2 +1,2 @@
 # cho-stone.github.io
-Research log in KyuTech and portfolio
+Research in KyuTech and portfolio
