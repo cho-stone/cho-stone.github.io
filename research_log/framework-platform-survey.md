@@ -1,293 +1,207 @@
-# Survey of Research Tools, Frameworks, and Platforms for Autonomous Systems
+# Survey of Tools and Frameworks for Mobile Robot Research
 
 ## Objective
 
-The goal of this survey is to identify suitable tools, frameworks, and platforms for future research and to refine potential research directions.
+The goal of this survey is to identify suitable tools and frameworks for developing mobile robot algorithms, evaluating them in simulation, and validating them in real-world environments.
+
+The main research interests are:
 
 - Mobile Robotics
-- Autonomous Driving
+- Navigation
 - Decision Making
+- Dynamic Environments
 - Reinforcement Learning
 - Simulation
+- Sim-to-Real Validation
 
+---
 
-## Autonomous Driving
+# Core Infrastructure
 
-### CARLA
+## ROS 2
 
-GitHub : https://github.com/carla-simulator/carla
+Official Website: https://www.ros.org/
 
-**Type** : Autonomous driving simulator and research platform
+**Type:**
 
-**Purpose** : To develop, train, and evaluate autonomous driving systems in realistic and configurable virtual environments.
+**Purpose:**
 
-**Main Features**
-- Flexible Python/C++ API for controlling the simulation
-- Configurable vehicles, pedestrians, traffic, and weather
-- Various autonomous-driving sensors
-- Realistic urban driving environments
-- Traffic scenario simulation
-- Custom map support
+**Role in Mobile Robotics:**
 
-**Simulation Environment** : Unreal Engine-based 3D simulation
+**Communication Architecture:**
 
-**Supported Agents**
-- Vehicles
-- Pedestrians
-- Ego vehicle
-- NPC / background traffic vehicles
+**Sensor Integration:**
 
-**Sensor Support**
-- Cameras: RGB, Depth, Semantic / Instance Segmentation, Optical Flow
-- LiDAR and Semantic LiDAR
-- Radar
-- GNSS
-- IMU
-- Collision, Lane Invasion, and Obstacle Sensors
-- V2X Communication Sensors
-- etc...
+**Robot Control:**
 
-**Decision-Making Support**<br>
-CARLA provides the environment, observations, vehicle control interface, traffic simulation, and scenario tools required for decision-making research.
-We can implement their own decision-making methods using sensor or simulator state information and control vehicles through the Python API.
+**Simulation Integration:**
 
-**Reinforcement Learning Support**<br>
-CARLA can be used as an environment for reinforcement learning by defining:
-- Observations from sensors or simulator states
-- Actions such as steering, throttle, and braking
-- Reward functions
-- Episode termination conditions
+**Nav2 Integration:**
 
-However, CARLA itself is not an RL framework. RL algorithms and training pipelines generally need to be implemented using external libraries such as PyTorch, RLlib, Stable-Baselines3, or custom implementations.
+**Real Robot Integration:**
 
-**Multi-Agent Support**<br>
-Multiple vehicles and pedestrians can exist and be controlled simultaneously.
-CARLA therefore supports multi-agent experiments and interactive driving scenarios, but it does not provide a complete multi-agent reinforcement learning framework by itself.
+**Strengths:**
 
-**Integration with Other Tools**
-- ROS 2
-- Autoware
-- ScenarioRunner
-- OpenSCENARIO
-- Scenic
-- RoadRunner / OpenDRIVE
-- CARLA Leaderboard
+**Limitations:**
 
-**Strengths**
-- Realistic visual and physical simulation
-- Rich sensor simulation
-- Flexible Python API
-- Strong for autonomous driving research
-- Complex traffic and pedestrian interactions
-- Suitable for perception, planning, decision-making, and end-to-end driving research
+**Potential Use for My Research:**
 
-**Limitations**
-- High computational requirements
-- More complex setup than lightweight driving simulators
-- Slower simulation and training throughput compared with lightweight RL-oriented simulators
-- Reinforcement learning pipelines must generally be implemented separately
-- Sim-to-real differences still exist despite realistic simulation
+---
 
-**My Thoughts**
-CARLA provides several strengths for autonomous driving research, including realistic simulation environments, rich sensor support, and flexible control through its API.
-However, its main limitation is that it is primarily designed for vehicle-based autonomous driving research and is less suitable for general mobile robot applications.
+# Simulation Platforms
 
-### SUMO
+## Gazebo
 
-GitHub: https://github.com/eclipse-sumo/sumo
+GitHub: https://github.com/gazebosim/gz-sim
 
-Type:
+**Type:**
 
-Purpose:
+**Purpose:**
 
-Main Features:
+**Main Features:**
 
-Traffic Simulation:
+**Physics Simulation:**
 
-Supported Agents:
+**Supported Robots:**
 
-Vehicle Behavior:
+**Sensor Support:**
 
-Multi-Agent Support:
+**Dynamic Agents:**
 
-Traffic Control Support:
+**ROS 2 Integration:**
 
-Integration with Other Simulators:
+**Nav2 Integration:**
 
-Strengths:
+**Reinforcement Learning Support:**
 
-Limitations:
+**Environment Customization:**
 
-### MetaDrive
+**Strengths:**
 
-GitHub: https://github.com/metadriverse/metadrive
+**Limitations:**
 
-Type:
+**Potential Use for My Research:**
 
-Purpose:
+**Potential for Sim-to-Real:**
 
-Main Features:
+---
 
-Simulation Environment:
+## NVIDIA Isaac Sim
 
-Supported Agents:
+Official Website: https://developer.nvidia.com/isaac/sim
 
-Decision-Making Support:
+**Type:**
 
-Reinforcement Learning Support:
+**Purpose:**
 
-Multi-Agent Support:
+**Main Features:**
 
-Strengths:
+**Physics Simulation:**
 
-Limitations:
+**Supported Robots:**
 
-Comparison with CARLA:
+**Sensor Support:**
 
-### SMARTS
+**Dynamic Agents:**
 
-GitHub: https://github.com/huawei-noah/SMARTS
+**ROS 2 Integration:**
 
-Type:
+**Nav2 Integration:**
 
-Purpose:
+**Reinforcement Learning Support:**
 
-Main Features:
+**Synthetic Data Support:**
 
-Simulation Environment:
+**Strengths:**
 
-Supported Agents:
+**Limitations:**
 
-Decision-Making Support:
+**Comparison with Gazebo:**
 
-Reinforcement Learning Support:
+**Potential Use for My Research:**
 
-Multi-Agent Support:
+**Potential for Sim-to-Real:**
 
-Strengths:
+---
 
-Limitations:
+# Navigation Framework
 
-Comparison with CARLA / MetaDrive:
-
-## Mobile Robotics
-
-### Nav2
+## Nav2
 
 GitHub: https://github.com/ros-navigation/navigation2
 
-Type:
+**Type:**
 
-Purpose:
+**Purpose:**
 
-Main Components:
+**Main Components:**
 
-Navigation Architecture:
+**Navigation Architecture:**
 
-Global Planning:
+**Localization / State Estimation:**
 
-Local Planning / Control:
+**Environmental Representation / Costmap:**
 
-Decision-Making Related Components:
+**Global Planning:**
 
-Simulation Integration:
+**Local Planning / Control:**
 
-ROS 2 Integration:
+**Behavior Trees:**
 
-Strengths:
+**Obstacle Avoidance:**
 
-Limitations:
+**Sensor Integration:**
 
-### Nav2SocialRL
+**Simulation Integration:**
+
+**ROS 2 Integration:**
+
+**Custom Algorithm Integration:**
+
+**Strengths:**
+
+**Limitations:**
+
+**Potential Use for My Research:**
+
+---
+
+# Learning-Based and Social Navigation Frameworks
+
+## Nav2SocialRL
 
 GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
-Type:
+**Type:**
 
-Based On:
+**Based On:**
 
-Purpose:
+**Purpose:**
 
-Simulation Environment:
+**Simulation Environment:**
 
-Dynamic Agents:
+**Dynamic Agents:**
 
-Observation:
+**Observation:**
 
-Action:
+**Action:**
 
-Learning Method:
+**Learning Method:**
 
-Decision-Making Level:
+**Decision-Making Level:**
 
-Nav2 Integration:
+**Social Navigation Support:**
 
-Strengths:
+**Nav2 Integration:**
 
-Limitations:
+**Gazebo Integration:**
 
-## Perception and Human Understanding
+**Strengths:**
 
-### YOLO
+**Limitations:**
 
-GitHub: https://github.com/ultralytics/ultralytics
+**Potential Use for My Research:**
 
-Type:
+# Next Steps
 
-Purpose:
-
-Main Features:
-
-Input:
-
-Output:
-
-Object Detection Support:
-
-Tracking Support:
-
-Potential Role in Autonomous Driving:
-
-Potential Role in Mobile Robotics:
-
-Potential Role in Decision Making:
-
-Strengths:
-
-Limitations:
-
-### OpenPose
-
-GitHub: https://github.com/CMU-Perceptual-Computing-Lab/openpose
-
-Type:
-
-Purpose:
-
-Main Features:
-
-Input:
-
-Output:
-
-Human Pose Information:
-
-Multi-Person Support:
-
-Potential Role in Autonomous Driving:
-
-Potential Role in Mobile Robotics:
-
-Potential Role in Human-Aware Decision Making:
-
-Strengths:
-
-Limitations:
-
-## My Thoughts
-
-Coming soon.
-
-## Next Steps
-
-Coming soon.
+Survey Gazebo
