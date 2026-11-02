@@ -15,7 +15,7 @@ Graduate student at Kyushu Institute of Technology, interested in mobile robotic
 My research focuses on autonomous systems, with interests in mobile robotics, autonomous driving, and decision making.
 
 ### Surveys
-- [Survey of Frameworks and Platforms for Autonomous Driving and Mobile Robot Research](research_log/framework-platform-survey.md)
+- [Survey of Tools and Frameworks for Mobile Robot Research](research_log/framework-platform-survey.md)
 
 ### Current Research
 
