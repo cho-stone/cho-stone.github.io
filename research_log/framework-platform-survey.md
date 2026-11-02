@@ -42,7 +42,7 @@ Official Website: https://www.ros.org/
 
 **Limitations:**
 
-**Potential Use for My Research:**
+**My Thoughts**<br>
 
 # Simulation Platforms
 
@@ -76,9 +76,7 @@ GitHub: https://github.com/gazebosim/gz-sim
 
 **Limitations:**
 
-**Potential Use for My Research:**
-
-**Potential for Sim-to-Real:**
+**My Thoughts**<br>
 
 ## NVIDIA Isaac Sim
 
@@ -110,11 +108,7 @@ Official Website: https://developer.nvidia.com/isaac/sim
 
 **Limitations:**
 
-**Comparison with Gazebo:**
-
-**Potential Use for My Research:**
-
-**Potential for Sim-to-Real:**
+**My Thoughts**<br>
 
 # Navigation Framework
 
@@ -154,7 +148,7 @@ GitHub: https://github.com/ros-navigation/navigation2
 
 **Limitations:**
 
-**Potential Use for My Research:**
+**My Thoughts**<br>
 
 # Learning-Based and Social Navigation Frameworks
 
@@ -190,8 +184,8 @@ GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
 **Limitations:**
 
-**Potential Use for My Research:**
+**My Thoughts**<br>
 
 # Next Steps
 
-Survey Gazebo
+Keeping survey
