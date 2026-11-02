@@ -1,18 +1,20 @@
 # CHO SEOKJIN
 
-Graduate student at Kyushu Institute of Technology, interested in mobile robotics, autonomous driving, and decision making.
+Graduate student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.
 
 ## Research Interests
 
 - Mobile Robotics
-- Autonomous Driving
+- Navigation
 - Decision Making
+- Dynamic Environments
 - Reinforcement Learning
 - Simulation
+- Sim-to-Real Validation
 
 ## Research
 
-My research focuses on autonomous systems, with interests in mobile robotics, autonomous driving, and decision making.
+My research interests focus on navigation and decision making for mobile robots in dynamic environments, with an emphasis on simulation-based algorithm development and real-world validation.
 
 ### Surveys
 - [Survey of Tools and Frameworks for Mobile Robot Research](research_log/framework-platform-survey.md)
