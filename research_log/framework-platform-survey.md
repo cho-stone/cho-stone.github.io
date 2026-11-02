@@ -14,8 +14,6 @@ The main research interests are:
 - Simulation
 - Sim-to-Real Validation
 
----
-
 # Core Infrastructure
 
 ## ROS 2
@@ -45,8 +43,6 @@ Official Website: https://www.ros.org/
 **Limitations:**
 
 **Potential Use for My Research:**
-
----
 
 # Simulation Platforms
 
@@ -84,8 +80,6 @@ GitHub: https://github.com/gazebosim/gz-sim
 
 **Potential for Sim-to-Real:**
 
----
-
 ## NVIDIA Isaac Sim
 
 Official Website: https://developer.nvidia.com/isaac/sim
@@ -121,8 +115,6 @@ Official Website: https://developer.nvidia.com/isaac/sim
 **Potential Use for My Research:**
 
 **Potential for Sim-to-Real:**
-
----
 
 # Navigation Framework
 
@@ -163,8 +155,6 @@ GitHub: https://github.com/ros-navigation/navigation2
 **Limitations:**
 
 **Potential Use for My Research:**
-
----
 
 # Learning-Based and Social Navigation Frameworks
 
