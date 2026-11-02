@@ -88,6 +88,10 @@ CARLA therefore supports multi-agent experiments and interactive driving scenari
 - Reinforcement learning pipelines must generally be implemented separately
 - Sim-to-real differences still exist despite realistic simulation
 
+**My Thoughts**
+CARLA provides several strengths for autonomous driving research, including realistic simulation environments, rich sensor support, and flexible control through its API.
+However, its main limitation is that it is primarily designed for vehicle-based autonomous driving research and is less suitable for general mobile robot applications.
+
 ### SUMO
 
 GitHub: https://github.com/eclipse-sumo/sumo
