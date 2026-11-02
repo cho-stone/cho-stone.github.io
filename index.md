@@ -1,6 +1,20 @@
 # CHO SEOKJIN
 
-Graduate student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.
+Incoming Master's student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.
+
+## Education
+
+**Kyushu Institute of Technology, Japan**  
+Incoming Master's Student in Creative Informatics  
+Apr. 2027 – Present
+
+**Kyushu University, Japan**  
+Research Student, Graduate School of Information Science and Electrical Engineering  
+Apr. 2026 – Mar. 2027
+
+**Dongguk University, Seoul, Korea**  
+B.E. in Multimedia Engineering  
+Mar. 2019 – Aug. 2025
 
 ## Research Interests
 
