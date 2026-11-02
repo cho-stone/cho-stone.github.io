@@ -211,8 +211,9 @@ My main contributions were:
 - Analysis of the MOTIF and NetHack Learning Environment codebase
 - Analysis of Pareto Multi-Task Learning
 - Investigation of multi-task reinforcement learning approaches
-- Implementation of the Random Task Selector
-- Evaluation of selector models
+- Implementation of the **Random Task Selector**
+- Contribution to the design and development of the **MLP-Based Dynamic Task Selector**
+- Evaluation and comparison of task-selection methods
 - Analysis of experimental results
 
 ## Discussion
