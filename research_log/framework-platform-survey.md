@@ -15,31 +15,78 @@ The goal of this survey is to identify suitable tools, frameworks, and platforms
 
 ### CARLA
 
-GitHub: https://github.com/carla-simulator/carla
+GitHub : https://github.com/carla-simulator/carla
 
-Type:
+**Type** : Autonomous driving simulator and research platform
 
-Purpose:
+**Purpose** : To develop, train, and evaluate autonomous driving systems in realistic and configurable virtual environments.
 
-Main Features:
+**Main Features**
+- Flexible Python/C++ API for controlling the simulation
+- Configurable vehicles, pedestrians, traffic, and weather
+- Various autonomous-driving sensors
+- Realistic urban driving environments
+- Traffic scenario simulation
+- Custom map support
 
-Simulation Environment:
+**Simulation Environment** : Unreal Engine-based 3D simulation
 
-Supported Agents:
+**Supported Agents**
+- Vehicles
+- Pedestrians
+- Ego vehicle
+- NPC / background traffic vehicles
 
-Sensor Support:
+**Sensor Support**
+- Cameras: RGB, Depth, Semantic / Instance Segmentation, Optical Flow
+- LiDAR and Semantic LiDAR
+- Radar
+- GNSS
+- IMU
+- Collision, Lane Invasion, and Obstacle Sensors
+- V2X Communication Sensors
+- etc...
 
-Decision-Making Support:
+**Decision-Making Support**<br>
+CARLA provides the environment, observations, vehicle control interface, traffic simulation, and scenario tools required for decision-making research.
+We can implement their own decision-making methods using sensor or simulator state information and control vehicles through the Python API.
 
-Reinforcement Learning Support:
+**Reinforcement Learning Support**<br>
+CARLA can be used as an environment for reinforcement learning by defining:
+- Observations from sensors or simulator states
+- Actions such as steering, throttle, and braking
+- Reward functions
+- Episode termination conditions
 
-Multi-Agent Support:
+However, CARLA itself is not an RL framework. RL algorithms and training pipelines generally need to be implemented using external libraries such as PyTorch, RLlib, Stable-Baselines3, or custom implementations.
 
-Integration with Other Tools:
+**Multi-Agent Support**<br>
+Multiple vehicles and pedestrians can exist and be controlled simultaneously.
+CARLA therefore supports multi-agent experiments and interactive driving scenarios, but it does not provide a complete multi-agent reinforcement learning framework by itself.
 
-Strengths:
+**Integration with Other Tools**
+- ROS 2
+- Autoware
+- ScenarioRunner
+- OpenSCENARIO
+- Scenic
+- RoadRunner / OpenDRIVE
+- CARLA Leaderboard
 
-Limitations:
+**Strengths**
+- Realistic visual and physical simulation
+- Rich sensor simulation
+- Flexible Python API
+- Strong for autonomous driving research
+- Complex traffic and pedestrian interactions
+- Suitable for perception, planning, decision-making, and end-to-end driving research
+
+**Limitations**
+- High computational requirements
+- More complex setup than lightweight driving simulators
+- Slower simulation and training throughput compared with lightweight RL-oriented simulators
+- Reinforcement learning pipelines must generally be implemented separately
+- Sim-to-real differences still exist despite realistic simulation
 
 ### SUMO
 
