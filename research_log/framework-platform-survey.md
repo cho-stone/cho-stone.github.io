@@ -20,29 +20,61 @@ The main research interests are:
 
 Official Website: https://www.ros.org/
 
-**Type:**
+**Type:** Open source robotics software framework and development platform
 
-**Purpose:**
+**Purpose:** To provide a common software infrastructure for developing robot systems by connecting sensors, algorithms, controllers, and hardware through standardized communication interfaces.
 
-**Role in Mobile Robotics:**
+**Role in Mobile Robotics:** software backbone connecting different components of a mobile robot.
 
-**Communication Architecture:**
+**Communication Architecture:** ROS 2 uses a distributed node-based architecture where different robot components communicate through Topics, Services, and Actions.
 
-**Sensor Integration:**
+**Sensor Integration**
+- LiDAR
+- RGB / Depth Camera
+- IMU
+- Wheel Encoders
+- GNSS
+- etc...
 
-**Robot Control:**
+**Robot Control:** ROS 2 can connect high-level algorithms to robot hardware.
 
-**Simulation Integration:**
+**Simulation Integration**
+ROS 2 can be integrated with robotics simulators such as:
+- Gazebo
+- NVIDIA Isaac Sim
 
-**Nav2 Integration:**
+This allows the same ROS 2-based software architecture to be tested first in simulation and later connected to a real robot.
 
-**Real Robot Integration:**
+**Nav2 Integration**
+Nav2 is a navigation framework built for ROS 2.
 
-**Strengths:**
+ROS 2 provides the communication infrastructure while Nav2 provides navigation-related components such as:
+- Localization
+- Costmaps
+- Global Planning
+- Local Planning / Control
+- Behavior Trees
+- Recovery Behaviors
 
-**Limitations:**
+**Real Robot Integration**
+The same ROS 2 nodes used in simulation can often be reused on a real robot if the simulated and real hardware provide compatible interfaces.
+This makes ROS 2 suitable for simulation-to-real-world research.
+
+**Strengths**
+- Modular and distributed architecture
+- Strong robotics ecosystem
+- Supports Python and C++
+- Integration with many sensors and robot platforms
+- Strong support for simulation
+
+**Limitations**
+- Relatively steep learning curve
+- Large ecosystem can be complex
+- Configuration and debugging can become difficult in large systems
+- Real robot integration still requires hardware-specific drivers and configuration
 
 **My Thoughts**<br>
+Using ROS 2 would make it possible to develop and evaluate an algorithm in simulation and later transfer the same software architecture to a real mobile robot.
 
 ## Simulation Platforms
 
