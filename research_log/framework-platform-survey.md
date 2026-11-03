@@ -20,13 +20,13 @@ The main research interests are:
 
 Official Website: https://www.ros.org/
 
-**Type:** Open source robotics software framework and development platform
+**Type :** Open source robotics software framework and development platform
 
-**Purpose:** To provide a common software infrastructure for developing robot systems by connecting sensors, algorithms, controllers, and hardware through standardized communication interfaces.
+**Purpose :** To provide a common software infrastructure for developing robot systems by connecting sensors, algorithms, controllers, and hardware through standardized communication interfaces.
 
-**Role in Mobile Robotics:** software backbone connecting different components of a mobile robot.
+**Role in Mobile Robotics :** software backbone connecting different components of a mobile robot.
 
-**Communication Architecture:** ROS 2 uses a distributed node-based architecture where different robot components communicate through Topics, Services, and Actions.
+**Communication Architecture :** ROS 2 uses a distributed node-based architecture where different robot components communicate through Topics, Services, and Actions.
 
 **Sensor Integration**
 - LiDAR
@@ -36,16 +36,16 @@ Official Website: https://www.ros.org/
 - GNSS
 - etc...
 
-**Robot Control:** ROS 2 can connect high-level algorithms to robot hardware.
+**Robot Control :** ROS 2 can connect high-level algorithms to robot hardware.
 
-**Simulation Integration**
+**Simulation Integration**<br>
 ROS 2 can be integrated with robotics simulators such as:
 - Gazebo
 - NVIDIA Isaac Sim
 
 This allows the same ROS 2-based software architecture to be tested first in simulation and later connected to a real robot.
 
-**Nav2 Integration**
+**Nav2 Integration**<br>
 Nav2 is a navigation framework built for ROS 2.
 
 ROS 2 provides the communication infrastructure while Nav2 provides navigation-related components such as:
@@ -56,7 +56,7 @@ ROS 2 provides the communication infrastructure while Nav2 provides navigation-r
 - Behavior Trees
 - Recovery Behaviors
 
-**Real Robot Integration**
+**Real Robot Integration**<br>
 The same ROS 2 nodes used in simulation can often be reused on a real robot if the simulated and real hardware provide compatible interfaces.
 This makes ROS 2 suitable for simulation-to-real-world research.
 
