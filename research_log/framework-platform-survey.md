@@ -202,33 +202,132 @@ The proposed algorithm should therefore use observations that can also be obtain
 
 Official Website: https://developer.nvidia.com/isaac/sim
 
-**Type:**
+**Type:** Robot simulation and development platform
 
-**Purpose:**
+**Purpose:** To develop, simulate, test, and validate robotic systems in physically based virtual environments, with support for realistic sensors, robot learning, synthetic data generation, and ROS 2 integration.
 
-**Main Features:**
+**Main Features**
+- High-fidelity 3D robot simulation
+- GPU-accelerated rendering and simulation
+- Physics-based robot and environment simulation
+- Realistic camera, LiDAR, and other sensor simulation
+- Large library of simulation-ready robot and sensor models
+- Robot import from formats such as URDF, MJCF, CAD, and USD
+- ROS 2 integration
+- Synthetic data generation
+- Integration with Isaac Lab for robot learning
+- Python-based simulation and automation
 
-**Physics Simulation:**
+**Physics Simulation**<br>
+Isaac Sim provides physics-based simulation for robot motion, collisions, joints, contacts, and interactions with the environment.<br>
+The default physics backend is NVIDIA PhysX, while Newton is also available as an experimental physics backend.
 
-**Supported Robots:**
+**Supported Robots**
+- Wheeled mobile robots
+- Holonomic mobile robots
+- Manipulators
+- Mobile manipulators
+- Humanoid robots
+- Quadruped robots
+- Aerial robots
+- Custom robots
 
-**Sensor Support:**
+**Sensor Support**
+- RGB Camera
+- Depth Camera
+- Stereo Camera
+- RTX LiDAR
+- RTX Radar
+- IMU
+- Contact Sensor
+- Effort Sensor
+- Joint State Sensor
+- etc...
 
-**Dynamic Agents:**
+**Dynamic Agents**<br>
+Isaac Sim can simulate multiple robots, moving objects, and animated human characters in the same environment.<br>
+Human and robot actors can also be configured with behaviors for dynamic environments and synthetic data generation.<br>
+However, realistic social-navigation behavior is not automatically provided as a complete navigation framework, so additional behavior models or algorithms may be required.
 
-**ROS 2 Integration:**
+**ROS 2 Integration**<br>
+Isaac Sim provides a ROS 2 Bridge for communication between the simulator and ROS 2.<br>
+ROS 2 interfaces can be created using:
+- OmniGraph nodes
+- Python scripts
 
-**Nav2 Integration:**
+Sensor data, robot states, and control commands can therefore be exchanged between Isaac Sim and ROS 2.
+```text
+Isaac Sim
+   ↓
+Virtual Sensors
+   ↓
+ROS 2
+   ↓
+Navigation / Decision-Making Algorithm
+   ↓
+Robot Commands
+   ↓
+Isaac Sim Robot
+```
 
-**Reinforcement Learning Support:**
+**Nav2 Integration**<br>
+Isaac Sim can be integrated with ROS 2 Nav2 for mobile robot navigation.<br>
+Simulated sensor information such as LiDAR data can be published through ROS 2 and used by Nav2 for:
+- Localization
+- Mapping
+- Costmap generation
+- Path planning
+- Local control
+- Obstacle avoidance
 
-**Synthetic Data Support:**
+**Reinforcement Learning Support**
+Isaac Sim can be combined with Isaac Lab, NVIDIA's robot learning framework, to create and train reinforcement learning environments.<br>
+Isaac Lab provides tools for defining observations, actions, rewards, episode termination, and environment resets, and supports RL libraries such as RSL-RL, skrl, RL-Games, and Stable-Baselines3.
 
-**Strengths:**
+However, the researcher must still design the RL task, including the observation space, action space, reward function, and training objective.
 
-**Limitations:**
+**Synthetic Data Support**
+Isaac Sim provides strong synthetic data generation capabilities through NVIDIA Replicator.
+
+Synthetic datasets can include:
+- RGB images
+- Depth information
+- 2D bounding boxes
+- 3D bounding boxes
+- Semantic segmentation
+- Instance segmentation
+- Surface normals
+- Point clouds
+
+Simulation parameters such as object positions, lighting, textures, and environments can also be randomized.
+
+**Strengths**
+- High-quality physics and rendering
+- Advanced sensor simulation
+- Strong support for cameras, LiDAR, and perception research
+- GPU-accelerated simulation
+- Large library of robot and sensor models
+- ROS 2 and Nav2 integration
+- Strong synthetic data generation capabilities
+- Strong support for robot learning through Isaac Lab
+- Suitable for simulation-to-real research
+- Highly customizable through Python
+
+**Limitations**
+- High computational and GPU requirements
+- More complex installation and configuration than lightweight simulators
+- Large software ecosystem can have a steep learning curve
+- High-fidelity rendering may be unnecessary for simple navigation experiments
+- Realistic human social behavior may require additional implementation
+- Simulation still cannot perfectly reproduce real sensor noise and robot dynamics
+- Robot-learning workflows often require learning Isaac Lab in addition to Isaac Sim
 
 **My Thoughts**<br>
+Isaac Sim provides a powerful simulation environment for mobile robot research, especially when realistic sensors, perception, reinforcement learning, or synthetic data generation are important.
+
+Compared with Gazebo, Isaac Sim provides more advanced rendering, sensor simulation, and robot learning support, while Gazebo is generally simpler and more lightweight for ROS 2 and Nav2-based mobile robot research.
+
+Since the final research topic and system requirements have not yet been fully determined, I plan to choose between Gazebo and Isaac Sim after clarifying the research objectives, required sensors, computational complexity, and learning or perception requirements.
 
 ## Navigation Framework
 
