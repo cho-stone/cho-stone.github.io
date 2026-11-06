@@ -82,17 +82,41 @@ Using ROS 2 would make it possible to develop and evaluate an algorithm in simul
 
 GitHub: https://github.com/gazebosim/gz-sim
 
-**Type:**
+**Type:** Open-source robotics simulator
 
-**Purpose:**
+**Purpose:** To simulate robots, sensors, physical interactions, and environments for robot development and testing before deployment on real hardware.
 
-**Main Features:**
+**Main Features**
+- 3D robot simulation
+- Physics simulation
+- Sensor simulation
+- Custom robot and environment models
+- Plugin-based extensibility
+- Graphical simulation interface
+- ROS 2 integration
+- Support for mobile robot simulation
 
-**Physics Simulation:**
+**Physics Simulation**
+Gazebo provides physics simulation for robot motion, collisions, contacts, joints, and interactions with the environment.
+It can use multiple physics engines through the Gazebo Physics interface.
 
-**Supported Robots:**
+**Supported Robots**
+- Differential-drive mobile robots
+- Wheeled robots
+- Manipulators
+- Drones
+- Legged robots
+- Custom robot models
 
-**Sensor Support:**
+**Sensor Support**
+- LiDAR
+- Camera
+- Depth Camera
+- IMU
+- GPS / GNSS
+- Contact Sensor
+- Force / Torque Sensor
+- etc...
 
 **Dynamic Agents:**
 
