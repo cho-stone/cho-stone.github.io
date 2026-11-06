@@ -96,8 +96,8 @@ GitHub: https://github.com/gazebosim/gz-sim
 - ROS 2 integration
 - Support for mobile robot simulation
 
-**Physics Simulation**
-Gazebo provides physics simulation for robot motion, collisions, contacts, joints, and interactions with the environment.
+**Physics Simulation**<br>
+Gazebo provides physics simulation for robot motion, collisions, contacts, joints, and interactions with the environment.<br>
 It can use multiple physics engines through the Gazebo Physics interface.
 
 **Supported Robots**
@@ -118,21 +118,85 @@ It can use multiple physics engines through the Gazebo Physics interface.
 - Force / Torque Sensor
 - etc...
 
-**Dynamic Agents:**
+**Dynamic Agents**<br>
+Gazebo can simulate multiple moving robots and dynamic objects in the same environment.<br>
+Custom plugins, scripts, or external ROS 2 nodes can be used to control other robots or moving agents.<br>
+However, realistic pedestrian or social behavior is not provided as a complete built-in social navigation system and may require additional models or frameworks.
 
-**ROS 2 Integration:**
+**ROS 2 Integration**<br>
+Gazebo can communicate with ROS 2 using the ros_gz integration packages.<br>
+The ros_gz_bridge allows information to be exchanged between Gazebo and ROS 2, including:
+- Sensor data
+- Joint states
+- Robot commands
+- Transform information
+- Simulation data
 
-**Nav2 Integration:**
+**Nav2 Integration**<br>
+Gazebo can be used together with Nav2 to test mobile robot navigation.
+- Robot model
+- Odometry
+- LiDAR / Depth Camera
+- Localization
+- Costmaps
+- Global Planner
+- Local Controller
 
-**Reinforcement Learning Support:**
+This makes it possible to test Nav2-based navigation before deploying the system on a real robot.
 
-**Environment Customization:**
+**Reinforcement Learning Support**<br>
+Gazebo can be used as a simulation environment for reinforcement learning.<br>
+However, Gazebo itself is not a reinforcement learning framework.<br>
+Researchers generally need to implement or connect:
+- Observation definitions
+- Action spaces
+- Reward functions
+- Episode reset logic
+- RL algorithms and training pipelines
 
-**Strengths:**
+using external frameworks such as PyTorch, Stable-Baselines3, RLlib, or custom implementations.
 
-**Limitations:**
+**Environment Customization**
+- Robot models
+- Buildings and rooms
+- Obstacles
+- Dynamic objects
+- Sensor configurations
+- Physical properties
+
+**Strengths**
+- Strong integration with ROS 2
+- Suitable for mobile robot research
+- Supports realistic robot physics and sensors
+- Highly customizable
+- Works well with Nav2
+- Can simulate the same sensor interfaces used by a real robot
+- Open-source and widely used in robotics research
+
+**Limitations**
+- Simulation setup can be complex
+- Robot and sensor models require configuration
+- Realistic human behavior is not provided by default
+- Reinforcement learning pipelines must be implemented separately
+- Physics and sensor behavior cannot perfectly reproduce the real world
 
 **My Thoughts**<br>
+Gazebo could be used as the main simulation environment for developing and evaluating mobile robot navigation and decision-making algorithms.<br>
+A possible structure is:
+
+```text
+Gazebo
+   ↓
+Simulated LiDAR / Depth Camera / Odometry
+   ↓
+ROS 2
+   ↓
+Nav2 / Proposed Algorithm
+   ↓
+Robot Command
+```
+Gazebo is suitable for simulation-to-real-world research because simulated and real robots can use similar ROS 2 interfaces.<br>
+The proposed algorithm should therefore use observations that can also be obtained or estimated from real sensors.
 
 ### NVIDIA Isaac Sim
 
@@ -206,8 +270,6 @@ GitHub: https://github.com/ros-navigation/navigation2
 
 **My Thoughts**<br>
 
-## Learning-Based and Social Navigation Frameworks
-
 ### Nav2SocialRL
 
 GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
@@ -244,4 +306,4 @@ GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
 ## Next Steps
 
-Keeping survey
+Surveying Recent Research Trends
