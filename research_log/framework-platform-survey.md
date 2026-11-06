@@ -280,13 +280,13 @@ Simulated sensor information such as LiDAR data can be published through ROS 2 a
 - Local control
 - Obstacle avoidance
 
-**Reinforcement Learning Support**
+**Reinforcement Learning Support**<br>
 Isaac Sim can be combined with Isaac Lab, NVIDIA's robot learning framework, to create and train reinforcement learning environments.<br>
 Isaac Lab provides tools for defining observations, actions, rewards, episode termination, and environment resets, and supports RL libraries such as RSL-RL, skrl, RL-Games, and Stable-Baselines3.
 
 However, the researcher must still design the RL task, including the observation space, action space, reward function, and training objective.
 
-**Synthetic Data Support**
+**Synthetic Data Support**<br>
 Isaac Sim provides strong synthetic data generation capabilities through NVIDIA Replicator.
 
 Synthetic datasets can include:
