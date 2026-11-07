@@ -343,7 +343,7 @@ GitHub: https://github.com/ros-navigation/navigation2
 
 **Navigation Architecture:**
 
-**Localization / State Estimation:**
+**Localization / State Estimation Integration:**
 
 **Environmental Representation / Costmap:**
 
@@ -353,7 +353,7 @@ GitHub: https://github.com/ros-navigation/navigation2
 
 **Behavior Trees:**
 
-**Obstacle Avoidance:**
+**Obstacle Avoidance / Collision Safety:**
 
 **Sensor Integration:**
 
@@ -367,7 +367,7 @@ GitHub: https://github.com/ros-navigation/navigation2
 
 **Limitations:**
 
-**My Thoughts**<br>
+**My Thoughts:**
 
 ### Nav2SocialRL
 
