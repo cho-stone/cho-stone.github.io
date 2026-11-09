@@ -335,9 +335,10 @@ Since the final research topic and system requirements have not yet been fully d
 
 GitHub: https://github.com/ros-navigation/navigation2
 
-**Type:**
+**Type:** ROS 2-based mobile robot navigation framework
 
-**Purpose:**
+**Purpose**<br>
+To provide a modular navigation system for mobile robots, including localization, environmental representation, path planning, local control, obstacle avoidance, and navigation behavior management.
 
 **Main Components:**
 
