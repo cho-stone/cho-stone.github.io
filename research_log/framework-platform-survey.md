@@ -340,7 +340,20 @@ GitHub: https://github.com/ros-navigation/navigation2
 **Purpose**<br>
 To provide a modular navigation system for mobile robots, including localization, environmental representation, path planning, local control, obstacle avoidance, and navigation behavior management.
 
-**Main Components:**
+**Main Components**
+- Behavior Tree Navigator
+- Planner Server
+- Controller Server
+- Costmap 2D
+- Smoother Server
+- Behavior Server
+- Map Server
+- AMCL
+- Waypoint Follower
+- Collision Monitor
+- Lifecycle Manager
+
+The planner and controller servers are particularly important because they execute the algorithms responsible for path generation and robot motion.
 
 **Navigation Architecture:**
 
