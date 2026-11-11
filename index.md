@@ -1,6 +1,7 @@
 # CHO SEOKJIN
 
-Incoming Master's student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.
+Incoming Master's student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.<br>
+[GitHub](https://github.com/cho-stone) · [Email](mailto:cba64511@gmail.com)
 
 ## Education
 
@@ -43,16 +44,17 @@ Coming soon
 
 A multi-agent reinforcement learning environment developed in Unreal Engine using PPO, RLlib, and PettingZoo.
 
-[View Project](https://github.com/cho-stone/ue5-multi-agent-rl.git)
+[View Project](https://github.com/cho-stone/ue5-multi-agent-rl)
 
 ### Adaptive Multi-Agent Classification System
 
 A NOTC-inspired multi-agent classification system with dynamically specialized agents.
 
-[View Project](https://github.com/cho-stone/adaptive-multi-agent-classification.git)
+[View Project](https://github.com/cho-stone/adaptive-multi-agent-classification)
 
 ### Multi-Task Reinforcement Learning in NetHack Using MOTIF
 
 A multi-task reinforcement learning project in NetHack using MOTIF with intrinsic rewards and task-specific learning to improve exploration across multiple objectives.
 
 [View Project](projects/nethack-multitask-rl.md)
+
