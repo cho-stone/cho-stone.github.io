@@ -423,35 +423,112 @@ It is also suitable for my planned workflow because the same ROS 2-based navigat
 
 GitHub: https://github.com/maxijsseldijk/Nav2SocialRL
 
-**Type:**
+**Type:** Research framework for reinforcement learning-based social navigation
 
-**Based On:**
+**Based On:** ROS 2, Gazebo, and Nav2
 
-**Purpose:**
+**Purpose:** To develop and evaluate socially-aware mobile robot navigation using reinforcement learning and imitation learning in environments with dynamic human-like agents.
 
-**Simulation Environment:**
+**Simulation Environment:** The framework uses Gazebo as the simulation environment and ROS 2 for communication between the robot, sensors, dynamic agents, Nav2, and learning components.
 
-**Dynamic Agents:**
+**Dynamic Agents**<br>
+Simulated human-like agents are included in the environment.<br>
+Their behavior is based on the Social Force Model, allowing them to react to the robot and other agents.
 
-**Observation:**
+**Observation**<br>
+The RL agent can receive information
+- Robot velocity
+- LiDAR information
+- Positions and velocities of nearby agents
+- Navigation path information
 
-**Action:**
+The exact observation configuration can be changed depending on the experiment.
 
-**Learning Method:**
+**Action**<br>
+Nav2SocialRL supports two main approaches:
+- Direct velocity command learning<br>
+The RL agent directly generates robot velocity commands.
 
-**Decision-Making Level:**
+- Local waypoint / plan learning<br>
+The RL agent generates a local waypoint or plan that is then followed by a Nav2 controller.
 
-**Social Navigation Support:**
+**Learning Method**<br>
+The framework currently supports:
+- Soft Actor-Critic (SAC) for reinforcement learning
+- DAgger for imitation learning
 
-**Nav2 Integration:**
+Imitation learning can also be used to pretrain the policy before reinforcement learning.
 
-**Gazebo Integration:**
+**Decision-Making Level**<br>
+The framework can operate at different levels of the navigation system.
+```text
+Direct Control
 
-**Strengths:**
+RL Policy
+   ↓
+Velocity Command
+   ↓
+Robot
+```
+or
+```text
+Higher-Level Decision
 
-**Limitations:**
+RL Policy
+   ↓
+Local Waypoint / Plan
+   ↓
+Nav2 Controller
+   ↓
+Robot
+```
+
+The second approach allows Nav2 to continue handling low-level robot control while RL focuses on higher-level navigation decisions.
+
+**Social Navigation Support**<br>
+The framework is designed specifically for navigation around people.<br>
+Social behavior can be encouraged through reward functions related to:
+- Collision avoidance
+- Distance from people
+- Path progress
+- Future collision risk
+- Disturbance of human-like agents
+- Social Force Model interactions
+
+**Nav2 Integration**<br>
+Nav2 provides the basic navigation system, including global paths, costmaps, and local controllers.<br>
+The learning-based component can modify navigation behavior rather than replacing the entire navigation stack.
+
+This allows conventional Nav2 navigation and learned social navigation behaviors to be combined.
+
+**Gazebo Integration**<br>
+Gazebo provides the simulated robot, environment, sensors, and dynamic agents used for training and evaluation.
+
+This allows RL policies to be repeatedly trained and evaluated without requiring a real robot during the early stages of research.
+
+**Strengths**
+- Combines Nav2 with reinforcement learning
+- Designed for social navigation research
+- Includes dynamic human-like agents
+- Supports both direct control and waypoint-based learning
+- Supports imitation learning
+- Uses ROS 2 and Gazebo
+- Provides an example of integrating learning-based methods into an existing navigation framework
+
+**Limitations**
+- The project is still marked as in progress
+- Currently limited to SAC for reinforcement learning
+- Currently limited to DAgger for imitation learning
+- Simulated human behavior is based on simplified models
+- Additional work would be required for real-world deployment
+- Some simulation information may not be directly available from real sensors
 
 **My Thoughts**<br>
+Nav2SocialRL is useful as a reference for understanding how reinforcement learning can be integrated with Nav2 rather than replacing the entire navigation system.
+
+The local waypoint learning approach is particularly interesting because the learned algorithm can focus on decision making while Nav2 continues to handle low-level navigation and robot control.
+
+It may also be useful for studying how dynamic human information can be incorporated into navigation.
 
 ## Next Steps
 
