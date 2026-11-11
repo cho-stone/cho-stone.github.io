@@ -16,6 +16,10 @@ The central idea was:
 
 ## NetHack Learning Environment
 
+<p align="center">
+  <img src="images/NLE_test.gif" width="700">
+</p>
+
 NetHack is a roguelike game with a highly complex environment.
 
 Important characteristics include:
