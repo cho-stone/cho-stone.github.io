@@ -340,48 +340,84 @@ GitHub: https://github.com/ros-navigation/navigation2
 **Purpose**<br>
 To provide a modular navigation system for mobile robots, including localization, environmental representation, path planning, local control, obstacle avoidance, and navigation behavior management.
 
-**Main Components**
-- Behavior Tree Navigator
-- Planner Server
-- Controller Server
-- Costmap 2D
-- Smoother Server
-- Behavior Server
-- Map Server
-- AMCL
-- Waypoint Follower
-- Collision Monitor
-- Lifecycle Manager
+**Main Components / Architecture**<br>
+Nav2 consists of several modular components, including:
+- Localization
+- Global and local costmaps
+- Global planner
+- Local controller
+- Behavior Trees
+- Collision monitoring
 
-The planner and controller servers are particularly important because they execute the algorithms responsible for path generation and robot motion.
+A simplified navigation flow is:
+```text
+Sensors / Odometry
+        ↓
+Localization
+        ↓
+Costmap
+        ↓
+Global Planner
+        ↓
+Local Controller
+        ↓
+Robot Commands
+```
 
-**Navigation Architecture:**
+**Environmental Representation / Costmap**<br>
+Nav2 uses global and local costmaps to represent free space, obstacles, and nearby navigation risks.<br>
+Sensor information such as LiDAR or depth data can be used to update these costmaps.
 
-**Localization / State Estimation Integration:**
+**Global Planning**<br>
+The global planner calculates a path from the robot's current position to the target.<br>
+Nav2 provides several planners and also allows custom planning algorithms to be implemented.
 
-**Environmental Representation / Costmap:**
+**Local Planning / Control**<br>
+The local controller follows the global path while reacting to nearby obstacles and generating velocity commands for the robot.<br>
+Custom control algorithms can also be integrated.
 
-**Global Planning:**
+**Behavior Trees:** Behavior Trees coordinate navigation tasks such as planning, path following, replanning, recovery, waiting, and goal checking.
 
-**Local Planning / Control:**
+**Integration**<br>
+Nav2 is built on ROS 2 and can integrate with:
+- LiDAR, cameras, IMU, and odometry
+- Gazebo
+- NVIDIA Isaac Sim
+- SLAM and localization systems
+- Real mobile robots
 
-**Behavior Trees:**
+This allows similar navigation software to be used in both simulation and real-world environments.
 
-**Obstacle Avoidance / Collision Safety:**
+**Custom Algorithm Integration**<br>
+Nav2 has a plugin-based architecture that allows researchers to replace or extend components
+- Planner
+- Controller
+- Costmap layer
+- Behavior
+- Behavior Tree nodes
 
-**Sensor Integration:**
+This makes Nav2 useful as a base framework for testing new navigation and decision-making algorithms.
 
-**Simulation Integration:**
+**Strengths**
+- Strong ROS 2 integration
+- Modular architecture
+- Supports simulation and real robots
+- Multiple built-in navigation algorithms
+- Custom planners and controllers can be added
+- Suitable as a baseline for navigation research
 
-**ROS 2 Integration:**
+**Limitations**
+- Initial configuration and parameter tuning can be complex
+- Standard navigation mainly relies on 2D costmaps
+- Human behavior and future motion prediction are not modeled by default
+- Advanced learning-based or prediction-based navigation requires additional algorithms
 
-**Custom Algorithm Integration:**
+**My Thoughts**<br>
+Nav2 could provide the basic navigation framework for my research instead of developing an entire navigation system from scratch.
 
-**Strengths:**
+Its modular architecture would allow me to focus on a specific research component, such as planning, control, obstacle handling, or decision making.
 
-**Limitations:**
-
-**My Thoughts:**
+It is also suitable for my planned workflow because the same ROS 2-based navigation system can be evaluated in Gazebo or Isaac Sim and later validated on a real mobile robot.
 
 ### Nav2SocialRL
 
