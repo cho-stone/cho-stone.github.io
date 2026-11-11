@@ -1,7 +1,8 @@
 # CHO SEOKJIN
 
 Incoming Master's student at Kyushu Institute of Technology, interested in mobile robotics, navigation, decision making, and sim-to-real research.<br>
-[GitHub](https://github.com/cho-stone) · [Email](mailto:cba64511@gmail.com)
+
+[GitHub](https://github.com/cho-stone) · Email: cba64511@gmail.com
 
 ## Education
 
