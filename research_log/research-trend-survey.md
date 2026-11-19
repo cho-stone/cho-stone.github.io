@@ -12,38 +12,77 @@ The goal is to understand current research trends, major research categories, co
 **Type:** Survey Paper  
 
 ### Purpose
--
+- To provide a structured overview of socially aware robot navigation and identify current research trends, research opportunities, and future challenges.
 
 ### Scope
--
+- Reviews socially aware robot navigation research published over approximately the past 10 years.
+- Classifies 193 selected papers covering mobile robots, autonomous vehicles, aerial robots, and other robotic platforms.
+- Focuses on navigation methods, human and environment understanding, social behavior, and evaluation.
 
 ### Research Categories / Taxonomy
--
+The paper organizes socially aware robot navigation into four major taxonomies   
+1. Robot Type
+   - Ground robots
+      - Mobile robots
+      - Autonomous vehicles
+   - Aerial robots
+   - Aquatic robots
+2. Planning and Decision-Making
+   - Communication
+   - Navigation task type
+   - Negotiation
+   - Local motion generation
+      - Planning-based
+      - Force-based
+      - Learning-based
+      - Other approaches
+   - Global motion decision-making
+      - Planning-based
+      - Learning-based
+3. Situation Awareness and Assessment
+   - Environment
+   - Agents
+      - Trajectory prediction
+      - Interactions and actions
+      - Intentions
+   - Social norms
+      - Proxemics and other social conventions
+4. Evaluation and Tools
+   - Qualitative and quantitative evaluation
+   - Simulators
+   - Datasets
+   - User studies
+   - Metrics and benchmarks
 
 ### Main Research Trends
-- 
-- 
-- 
+- Learning-based local motion generation includes reinforcement learning, deep reinforcement learning, deep learning, imitation learning, and inverse reinforcement learning.
+- Exploring new approaches and applications of socially aware navigation for increasingly complex social environments.
+- Obstacles, agent trajectory prediction, and proxemics constraints are the most frequently considered aspects of situation awareness in the reviewed literature.
+- Planning-based and learning-based approaches are both used for global motion decision-making.
+- Quantitative evaluation is widely used to evaluate socially aware navigation systems.
 
 ### Key Findings
-- 
-- 
-- 
+- Mobile robots are the main domain of interest in the reviewed socially aware navigation literature.
+- Learning-based approaches can capture aspects of social interaction that are difficult to manually model.
+- One of the main challenges in global motion decision-making is adapting to changing environments and unexpected obstacles.
+- Evaluation metrics can be grouped into navigation, discomfort, and naturalness metrics.
+- Human trajectory prediction is an important component of agent modeling in socially aware navigation.
 
 ### Current Limitations
-- 
-- 
-- 
+- Current human models are insufficient to represent complex human reactions and mental states.
+- Human position, velocity, and immediate motion intention alone cannot fully capture human behavior.
+- There is a lack of universal standards and benchmarks for comparing socially aware navigation algorithms.
+- Many discomfort metrics are based on proxemics and are not applicable to every navigation situation.
+- Comfort and trust have received less attention than safety.
+- Learning-based global decision-making approaches may require significant training time and may not generalize well to novel situations.
 
 ### Future Research Directions
-- 
-- 
-- 
+- Human modeling and intention prediction
+- User/context-adaptive navigation
+- Dynamic-agent modeling and proactive planning
+- Better social evaluation metrics and benchmarks
+- Comfort, trust, and social acceptance
 
-### Relevant Papers to Follow
-- 
-- 
-- 
 ### My Thoughts   
 
 ## Deep Reinforcement Learning of Mobile Robot Navigation in Dynamic Environment: A Review
