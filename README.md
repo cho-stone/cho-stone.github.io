@@ -1,4 +1,4 @@
 # cho-stone.github.io
-Research in KyuTech and portfolio
+Research Log and portfolio
 
 [View](https://cho-stone.github.io/)
