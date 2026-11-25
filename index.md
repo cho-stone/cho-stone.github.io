@@ -34,6 +34,7 @@ My research interests focus on navigation and decision making for mobile robots 
 
 ### Surveys
 - [Survey of Tools and Frameworks for Mobile Robot Research](research_log/framework-platform-survey.md)
+- [Survey of Recent Research Trends in Mobile Robotics](research_log/research-trend-survey.md)
 
 ### Current Research
 
